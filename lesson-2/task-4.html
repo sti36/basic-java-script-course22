@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+</head>
+
+<body>
+    <script>
+
+        function sum(a, b) {
+            sum = a + b;
+            return sum;
+        }
+
+        function dif(a, b) {
+            dif = a - b;
+            return dif;
+        }
+
+        function div(a, b) {
+            div = a / b;
+            return div;
+        }
+
+        function mult(a, b) {
+            mult = a * b;
+            return mult;
+        }
+
+        let a = +prompt("Введите a:");
+        let b = +prompt("Введите b:");
+        let operation = prompt("Введите арифметическую операцию (+, -, /, *): ");
+
+        if (operation == "+") {
+            sum(a, b);
+            console.log(sum);
+        } else if (operation == "-") {
+            dif(a, b);
+            console.log(dif);
+        } else if (operation == "/") {
+            div(a, b);
+            console.log(div);
+        } else if (operation == "*") {
+            mult(a, b);
+            console.log(mult);
+        } else {
+            console.log("Такую арифметическую операцию я не знаю");
+        }
+
+    </script>
+</body>
+
+</html>

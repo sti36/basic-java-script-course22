@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Введите число: a");
+        let b = +prompt("Введите число: b");
+        console.log(a, b);
+        if (a >= 0 && b >= 0) {
+            console.log("Числа " + a + " и " + b + " положительные, находим их разность");
+            console.log("Разность чисел " + a + " и " + b + " равна: " + (a - b));
+        } else {
+            if (a < 0 && b < 0) {
+                console.log("Числа " + a + " и " + b + " отрицательные, находим их произведение");
+                console.log("Произведение чисел " + a + " и " + b + " равно: " + (a * b));
+            } else {
+                console.log("Числа " + a + " и " + b + " разных знаков, находим их сумму");
+                console.log("Сумма чисел " + a + " и " + b + " равна: " + (a + b));
+            }
+        }
+    </script>
+</body>
+
+</html>
