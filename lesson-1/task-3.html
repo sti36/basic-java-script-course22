@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+</head>
+
+<body>
+    <script>
+        let example_one = 10 + 10 + "10";
+        console.log(example_one); //10 плюс 10 получаем 20 плюс(конкатенация) 10 получаем 2010
+        let example_two = 10 + "10" + 10;
+        console.log(example_two);//10 конкатенация 10 получаем 1010 конкатенация 10 получаем 101010
+        let example_three = 10 + 10 + +"10";
+        console.log(example_three);//10 плюс 10 получаем 20 плюс 10, т.к. плюс перед ковычкой, получаем 30
+        let example_four = 10 / -"";
+        console.log(example_four);//10 делим на нуль получаем бесконечность
+        let example_five = 10 / +"2,5";
+        console.log(example_five);//10 делим на NaN получаем NaN (из-за запятой)
+        let result = 3 - 4 * 2;
+        console.log(result);//4 умножаем на 2 получаем 8, 3 минус 8 получаем -5
+    </script>
+</body>
+
+</html>
