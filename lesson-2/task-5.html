@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+</head>
+<script>
+    function sum(arg1, arg2) {
+        sum = arg1 + arg2;
+        return sum;
+    }
+
+    function dif(arg1, arg2) {
+        dif = arg1 - arg2;
+        return dif;
+    }
+
+    function div(arg1, arg2) {
+        div = arg1 / arg2;
+        return div;
+    }
+
+    function mult(arg1, arg2) {
+        mult = arg1 * arg2;
+        return mult;
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case "сложение":
+                sum(arg1, arg2);
+                console.log(sum);
+                break;
+            case "вычитание":
+                dif(arg1, arg2);
+                console.log(dif);
+                break;
+            case "деление":
+                div(arg1, arg2);
+                console.log(div);
+                break;
+            case "умножение":
+                mult(arg1, arg2);
+                console.log(mult);
+                break;
+            default:
+                console.log("Такую арифметическую операцию я не знаю");
+        }
+    }
+
+    let arg1 = +prompt("Введите первого аргумента:");
+    let arg2 = +prompt("Введите второго аргумента:");
+    let operation = prompt("Введите арифметическую операцию (сложение, вычитание, деление, умножение): ");
+    mathOperation(arg1, arg2, operation);
+</script>
+
+<body>
+
+</body>
+
+</html>
